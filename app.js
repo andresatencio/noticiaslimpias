@@ -28,7 +28,6 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
-app.get('/2', routes.index2);
 
 app.get('/noticias', noticias.noticias)
 app.get('/noticias/:id', noticias.noticiasId)
