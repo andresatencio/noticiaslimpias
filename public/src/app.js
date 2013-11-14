@@ -14,7 +14,6 @@ angular.module('app', []).
 			templateUrl: 'src/views/noticia.html',
 			controller: NoticiasDetailsController
 		}).
-		//cualquier ruta no definida  
 		otherwise({
 			redirectTo: '/noticias'});
 
