@@ -1,0 +1,27 @@
+<!-- <a href="#/noticias">< volver</a>
+<h2>{{noticia.titulo}} #{{id}}</h2>
+
+<p><img ng-src="{{noticia.img}}" width="95" height="150"><br />
+<strong>{{noticia.titulo}}</strong><br/>
+{{noticia.texto}}</p> -->
+
+<a href="#/noticias" class="button large">
+	<span class="icon arrow-left"></span>Volver
+</a>
+
+<div class="row">
+	<div class="column_9 offset_2 text center">
+		<article>
+			<h1>{{noticia.titulo}}</h1>
+			<a href="#/noticias/{{noticia.id}}" class="tip-right" data-tip="{{noticia.titulo}}">
+				<img src="{{noticia.img}}" class="responsive">
+			</a>
+			<br>
+			<p class="column_7 offset_1 align text justify">
+				{{noticia.texto}}
+				<br>
+				<br>
+			</p>
+		</article>
+	</div>
+</div>

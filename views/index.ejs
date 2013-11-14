@@ -1,0 +1,47 @@
+<html lang="en" ng-app="app">
+    <head>
+    <meta charset="utf-8">
+    <title>Noticias Limpias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/tuktuk.css">
+    <link rel="stylesheet" href="css/tuktuk.theme.css">
+    <link rel="stylesheet" href="css/tuktuk.icons.css">
+    <style>
+        footer{
+            margin-bottom: 0px;
+        }
+    </style>
+    <script src="src/lib/angular.min.js"></script>
+    <script src="src/app.js"></script>
+    <script src="src/controllers/NoticiasController.js"></script>
+    <script src="src/controllers/NoticiasDetailsController.js"></script>
+</head>
+<body class="text thin" data-twttr-rendered="true">
+<div ng-view></div>
+    
+    <br>
+    <br>
+    <br>
+    <footer class="bck dark padding">
+        <div class="row margin-top margin-bottom">
+            <div class="column_5">
+                <p class="text bold big">Creado por</p>
+                <p class="text bold big">
+                    <a href="http://andresatencio.com.ar" target="_blank" class="display inline">Andres</a>
+                </p>
+            </div>
+            <div class="column_4">
+                <p class="text bold big">Contacto!</p>
+                <a href="mailto:and.atencio@gmail.com?subject=NoticiasLimpias" class="text underline color theme">and.atencio@gmail.com</a>
+            </div>
+            <div class="column_3">
+                <p class="text bold big">Objetivo</p>
+                Aprender a usar <a href="http://angularjs.org" target="_blank" class="text underline color theme">AngularJS</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+   <!--  // <script src="js/tuktuk.js"></script> -->
+</body>
+</html>

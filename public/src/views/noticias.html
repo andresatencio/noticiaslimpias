@@ -1,0 +1,65 @@
+<!-- <h2>Noticias de San Nicolas de los Arroyos</h2>
+<p>
+<strong>Buscar</strong>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+Titulo: <input ng-model="query.titulo">
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+</p>
+ 
+<ul>
+    <li ng-repeat="obj in noticias | filter:query | orderBy:orderReverse">
+    	<div ng-include src=" 'src/views/_noticiadetails.html' "></div>
+    </li>
+</ul>
+
+
+
+ -->
+     <!-- ========================== HEADER ========================== -->
+    <header class="bck  margin-top margin-bottom">
+        <div class="row">
+            <div class="column_6">
+                <h3 class="text italic thin">Noticias limpias <small> de San Nicolas</small></h3>
+            </div>
+            <nav class="column_6 text right">
+                <p>
+                    Consumiendo de 
+                    <a href="http://snapi.aws.af.cm" target="_blank" class="button alert">
+                        <span class="icon cloud-download"></span>sn API
+                    </a>
+                </p>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bck dark landing text center color white">
+    	<br>
+        <div class="row">
+            <div class="column_10 offset_1">
+                <h2><strong>Noticias</strong>limpias</h2>
+                <h5 class="margin-bottom">Ver las noticias, pero como corresponde!</h5>
+                <p>*Sin la publicidad fea de diarioelinformante.com.ar</p>
+                <br>
+            </div>
+            <div class="column_6 offset_3 form subscribe">
+                <input type="text" class="large" placeholder="Filtrar por titulo" ng-model="query.titulo">
+            </div> 
+        </div>
+        <br>
+        <br>
+    </section>
+    <br>
+    <br>
+
+<div class="row">
+	<div class="column_9 offset_2">
+    	<article class="row" ng-repeat="obj in noticias | filter:query | orderBy:orderReverse">
+        	<div ng-include src=" 'src/views/_noticiadetails.html' "></div>
+        	<hr>
+        </article>         
+	</div>
+</div>
+
